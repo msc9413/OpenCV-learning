@@ -16,6 +16,7 @@ void main() {
 	string path = "Resources/lambo.png";
 	Mat img=imread(path);
 
+	// https://blog.csdn.net/qq_37791134/article/details/80984508
 	Mat imgHSV,mask;
 	cvtColor(img, imgHSV, COLOR_BGR2HSV);//转换图像到HSV空间，在其中查找颜色更加容易
 	namedWindow("Trackbars", (640, 200));//(640,200)是尺寸
